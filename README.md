@@ -8,6 +8,20 @@ This Solidity program implements a simple voting contract on the Ethereum blockc
 
 # To run the program
 
+contract MyToken {
+    string public name;
+    string public symbol;
+    uint public totalSupply;
+
+    mapping(address => uint) public balances;
+
+    constructor(string memory _name, string memory _symbol, uint _totalSupply) {
+        name = _name;
+        symbol = _symbol;
+        totalSupply = _totalSupply;
+        balances[msg.sender] = _totalSupply;
+    }
+
 Visit the Remix IDE website (https://remix.ethereum.org/) and create a new file for your Solidity code.
 
 Click on the "Solidity Compiler" tab in Remix.
