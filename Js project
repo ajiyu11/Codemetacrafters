@@ -1,0 +1,33 @@
+#NFT Minting and Management System
+Functionality
+
+#NFT Minting:
+The system can "mint" NFTs, allowing users to create unique digital assets.
+At least three NFTs should be minted to demonstrate the system's capability.
+
+#NFT Storage
+The minted NFTs are stored securely within the system.
+
+#Console Details
+
+The system has the ability to print the details of each minted NFT to the console.
+This includes information such as the NFT ID, metadata, and any additional attributes.
+
+#Total Supply
+
+The system can print the total supply of the NFT collection to the console.
+This provides an overview of how many unique NFTs have been minted and stored.
+
+#Code-Read-Aloud
+
+A comprehensive guide on how to navigate and understand the codebase is included.
+Each step, from minting NFTs to printing details and total supply, is explained thoroughly.
+The code read-aloud process ensures that users can follow along and comprehend the logic and functionality of the system.
+
+#Clear and Understandable
+
+Comments are used extensively throughout the code to explain key concepts and functionalities.
+Variable names, functions, and classes are named descriptively to enhance readability.
+The codebase follows best practices and coding standards, making it easy for developers to collaborate and maintain.
+
+
