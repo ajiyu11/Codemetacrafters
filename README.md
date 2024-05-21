@@ -1,40 +1,46 @@
 # JavaScript
 
-This project aims to create an ERC20 token contract on the Ethereum blockchain. The contract includes functionalities for minting new tokens and burning existing tokens, along with maintaining balances for token holders.
+variable to hold minted NFTs (array is ideal for holding multiple NFTs):
 
-# Description
+This line is a comment, explaining what the next line does. Comments are ignored by the computer but help humans understand the code.
+It tells us that a variable named mintedNFTs will be created to store the minted NFTs.
+The comment also mentions that an array ([]) is ideal for holding multiple NFTs. An array is like a container that can hold a collection of items.
 
-This Solidity program implements a simple voting contract on the Ethereum blockchain. The contract allows users to vote for candidates and provides functionalities to manage the voting process.
+# Declare variable and keywords
 
-# To run the program
+This line declares a variable named ( mintedNFTs ).
+The keyword ( let ) is used to define a variable that can be changed later in the code.
+The ( = ) sign assigns an empty array [] to the mintedNFTs variable. This empty array will eventually hold the information about the minted NFTs.
 
-contract MyToken {
-    string public name;
-    string public symbol;
-    uint public totalSupply;
+# Function to mint an NFT with metadata
+This is another comment explaining the purpose of the following function.
+It tells us that the function  ( mintNFT ) will create a new NFT (Non-fungible token) with some metadata (information) about 
 
-    mapping(address => uint) public balances;
+# Define the Function name and image, descrption
 
-    constructor(string memory _name, string memory _symbol, uint _totalSupply) {
-        name = _name;
-        symbol = _symbol;
-        totalSupply = _totalSupply;
-        balances[msg.sender] = _totalSupply;
-    }
+This defines a function named ( mintNFT ). Functions are reusable blocks of code that perform specific tasks.
+This function takes three arguments: ( name ),  ( description ), and ( image ). These arguments will be used to store information about the minted NFT.
+The curly braces {...} indicate the body of the function, where the actual code for minting an NFT will be written.
 
-Visit the Remix IDE website (https://remix.ethereum.org/) and create a new file for your Solidity code.
+# Code inside the mintNFt
+The code inside this function will likely create an object to represent the NFT and add it to the ( mintedNFTs array ).
 
-Click on the "Solidity Compiler" tab in Remix.
-Ensure the correct compiler version is selected.
-Click "Compile" to compile your Solidity code. Make sure there are no compilation errors.
-Switch to the "Deploy & Run Transactions" tab in Remix.
-Select the contract you want to deploy from the dropdown (assuming you have only one contract in your file).
-Enter the constructor arguments (e.g., token name, symbol, total supply).
-Choose an Ethereum account (e.g., MetaMask) to deploy the contract from.
-Click "Deploy" to deploy the contract to the Ethereum blockchain.
+# Function To List all minted NFTs and ther metadata
 
+This comment explains the purpose of the next function.
+It tells us that the  ( listNFTs ) function will iterate through the mintedNFTs array and print the metadata of each NFT.
 
+# Function NFTs list 
 
+This defines a function named  ( listNFTs ). Similar to ( mintNFT ) , this is a reusable block of code.
+The curly braces {...} again indicate the body of the function, where the code for listing NFTs will be written.
 
+# ListNFTs function
 
+This function will iterate (go through) each NFT stored in the mintedNFTs array one by one.
+For each NFT, it will likely use console.log statements to display details like the NFT's name, description, and image URL.
 
+# getTotalSupply function
+
+This function calculates the total number of NFTs currently موجود (mow-JOOD, meaning "existing" in Arabic) in the mintedNFTs array.
+It likely achieves this by using the .length property of the array. The .length property tells us how many elements (in this case, NFTs) are stored in the array.
