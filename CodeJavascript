@@ -1,0 +1,38 @@
+// variable to hold minted NFTs (array is ideal for holding multiple NFTs)
+let mintedNFTs = [];
+
+// function to mint an NFT with metadata
+function mintNFT(name, description, image) {
+  // Create an NFT object with the provided metadata
+  const nft = {
+    name: name,
+    description: description,
+    image: image,
+  };
+
+  // Add the minted NFT to the mintedNFTs array
+  mintedNFTs.push(nft);
+}
+
+// function to list all minted NFTs and their metadata
+function listNFTs() {
+  console.log("** Your Minted NFTs **");
+  for (const nft of mintedNFTs) {
+    console.log("Name:", nft.name);
+    console.log("Description:", nft.description);
+    console.log("Image:", nft.image);
+    console.log("----------------------");
+  }
+}
+
+// function to get the total number of minted NFTs
+function getTotalSupply() {
+  return mintedNFTs.length;
+}
+
+// Example usage of the functions
+mintNFT("Cool Crypto Cat", "A unique and adorable crypto cat", "https://.../cat.png");
+mintNFT("Space Traveler", "Explore the cosmos with this astronaut", "https://.../astronaut.jpg");
+
+console.log("Total NFTs minted:", getTotalSupply());
+listNFTs();
