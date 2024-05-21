@@ -44,3 +44,45 @@ For each NFT, it will likely use console.log statements to display details like 
 
 This function calculates the total number of NFTs currently موجود (mow-JOOD, meaning "existing" in Arabic) in the mintedNFTs array.
 It likely achieves this by using the .length property of the array. The .length property tells us how many elements (in this case, NFTs) are stored in the array.
+
+# Code
+// variable to hold minted NFTs (array is ideal for holding multiple NFTs)
+let mintedNFTs = [];
+
+// function to mint an NFT with metadata
+function mintNFT(name, description, image) {
+  // Create an NFT object with the provided metadata
+  const nft = {
+    name: name,
+    description: description,
+    image: image,
+  };
+
+  // Add the minted NFT to the mintedNFTs array
+  mintedNFTs.push(nft);
+}
+
+// function to list all minted NFTs and their metadata
+function listNFTs() {
+  console.log("** Your Minted NFTs **");
+  for (const nft of mintedNFTs) {
+    console.log("Name:", nft.name);
+    console.log("Description:", nft.description);
+    console.log("Image:", nft.image);
+    console.log("----------------------");
+  }
+}
+
+// function to get the total number of minted NFTs
+function getTotalSupply() {
+  return mintedNFTs.length;
+}
+
+// Example usage of the functions
+mintNFT("Cool Crypto Cat", "A unique and adorable crypto cat", "https://.../cat.png");
+mintNFT("Space Traveler", "Explore the cosmos with this astronaut", "https://.../astronaut.jpg");
+
+console.log("Total NFTs minted:", getTotalSupply());
+listNFTs();
+
+
